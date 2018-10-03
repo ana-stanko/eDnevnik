@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eDnevnik_v4ModelStoreContainer" CdmEntityContainer="eDnevnik_v4Entities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dodeljene_ocene">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Dodeljene_ocene">
+        <MappingFragment StoreEntitySet="Dodeljene_ocene">
+          <ScalarProperty Name="ID_D_ocena" ColumnName="ID_D_ocena" />
+          <ScalarProperty Name="ID_ucenik" ColumnName="ID_ucenik" />
+          <ScalarProperty Name="ID_predmet" ColumnName="ID_predmet" />
+          <ScalarProperty Name="ID_ocena" ColumnName="ID_ocena" />
+          <ScalarProperty Name="datum_unosa" ColumnName="datum_unosa" />
+          <ScalarProperty Name="tip_ocene" ColumnName="tip_ocene" />
+          <ScalarProperty Name="komentar" ColumnName="komentar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dodeljeni_profesori">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Dodeljeni_profesori">
+        <MappingFragment StoreEntitySet="Dodeljeni_profesori">
+          <ScalarProperty Name="ID_odeljenje" ColumnName="ID_odeljenje" />
+          <ScalarProperty Name="ID_profesor" ColumnName="ID_profesor" />
+          <ScalarProperty Name="datum_dodele" ColumnName="datum_dodele" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ocenes">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Ocene">
+        <MappingFragment StoreEntitySet="Ocene">
+          <ScalarProperty Name="ID_ocena" ColumnName="ID_ocena" />
+          <ScalarProperty Name="ocena" ColumnName="ocena" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Odeljenjas">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Odeljenja">
+        <MappingFragment StoreEntitySet="Odeljenja">
+          <ScalarProperty Name="ID_odeljenje" ColumnName="ID_odeljenje" />
+          <ScalarProperty Name="broj_odeljenja" ColumnName="broj_odeljenja" />
+          <ScalarProperty Name="godina_skolovanja" ColumnName="godina_skolovanja" />
+          <ScalarProperty Name="staresina" ColumnName="staresina" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Predmetis">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Predmeti">
+        <MappingFragment StoreEntitySet="Predmeti">
+          <ScalarProperty Name="ID_predmet" ColumnName="ID_predmet" />
+          <ScalarProperty Name="redni_broj" ColumnName="redni_broj" />
+          <ScalarProperty Name="naziv_predmeta" ColumnName="naziv_predmeta" />
+          <ScalarProperty Name="opis_predmeta" ColumnName="opis_predmeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Predmetni_profesori">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Predmetni_profesori">
+        <MappingFragment StoreEntitySet="Predmetni_profesori">
+          <ScalarProperty Name="ID_profesor" ColumnName="ID_profesor" />
+          <ScalarProperty Name="ID_predmet" ColumnName="ID_predmet" />
+          <ScalarProperty Name="datum_dodele" ColumnName="datum_dodele" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profesoris">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Profesori">
+        <MappingFragment StoreEntitySet="Profesori">
+          <ScalarProperty Name="ID_profesor" ColumnName="ID_profesor" />
+          <ScalarProperty Name="korisnicko_ime" ColumnName="korisnicko_ime" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+          <ScalarProperty Name="administrator" ColumnName="administrator" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipovi_ocena">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Tipovi_ocena">
+        <MappingFragment StoreEntitySet="Tipovi_ocena">
+          <ScalarProperty Name="tip_ocene" ColumnName="tip_ocene" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ucenicis">
+      <EntityTypeMapping TypeName="eDnevnik_v4Model.Ucenici">
+        <MappingFragment StoreEntitySet="Ucenici">
+          <ScalarProperty Name="ID_ucenik" ColumnName="ID_ucenik" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="ID_odeljenje" ColumnName="ID_odeljenje" />
+          <ScalarProperty Name="godina_upisa" ColumnName="godina_upisa" />
+          <ScalarProperty Name="pol" ColumnName="pol" />
+          <ScalarProperty Name="datum_rodjenja" ColumnName="datum_rodjenja" />
+          <ScalarProperty Name="JMBG" ColumnName="JMBG" />
+          <ScalarProperty Name="roditelj_staratelj" ColumnName="roditelj_staratelj" />
+          <ScalarProperty Name="kontakt_telefon" ColumnName="kontakt_telefon" />
+          <ScalarProperty Name="korisnicko_ime" ColumnName="korisnicko_ime" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+          <ScalarProperty Name="adresa" ColumnName="adresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="eDnevnik_v4Model.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
