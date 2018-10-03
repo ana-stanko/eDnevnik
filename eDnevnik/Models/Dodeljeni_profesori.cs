@@ -11,10 +11,13 @@ namespace eDnevnik.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Dodeljeni_profesori
     {
+        
         public int ID_odeljenje { get; set; }
+        [Key]
         public int ID_profesor { get; set; }
         public Nullable<System.DateTime> datum_dodele { get; set; }
     

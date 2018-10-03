@@ -11,9 +11,11 @@ namespace eDnevnik.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Dodeljene_ocene
     {
+        [Key]
         public int ID_D_ocena { get; set; }
         public int ID_ucenik { get; set; }
         public int ID_predmet { get; set; }

@@ -113,8 +113,8 @@ C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.DependencyCollector.xm
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.Web.xml
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CoreCompileInputs.cache
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CopyComplete
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.dll
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.pdb
+C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache

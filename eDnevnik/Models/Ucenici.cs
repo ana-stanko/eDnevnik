@@ -11,6 +11,7 @@ namespace eDnevnik.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class Ucenici
     {
@@ -20,6 +21,7 @@ namespace eDnevnik.Models
             this.Dodeljene_ocene = new HashSet<Dodeljene_ocene>();
         }
     
+        [Key]
         public int ID_ucenik { get; set; }
         public string ime { get; set; }
         public string prezime { get; set; }

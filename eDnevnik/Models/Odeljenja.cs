@@ -11,7 +11,8 @@ namespace eDnevnik.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Odeljenja
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,7 +21,8 @@ namespace eDnevnik.Models
             this.Dodeljeni_profesori = new HashSet<Dodeljeni_profesori>();
             this.Ucenicis = new HashSet<Ucenici>();
         }
-    
+
+        [Key]
         public int ID_odeljenje { get; set; }
         public int broj_odeljenja { get; set; }
         public int godina_skolovanja { get; set; }

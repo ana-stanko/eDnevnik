@@ -6,8 +6,9 @@ using System.Data.Entity;
 
 namespace eDnevnik.Models
 {
-    public class ApplicationContext
+    public class ApplicationContext : DbContext
     {
+
         public DbSet<Profesori> Profesoris { get; set; }
         public DbSet<Odeljenja> Odeljenjas { get; set; }
         public DbSet<Ocene> Ocenes { get; set; }
