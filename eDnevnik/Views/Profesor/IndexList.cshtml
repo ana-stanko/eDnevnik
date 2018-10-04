@@ -1,0 +1,10 @@
+﻿@model IEnumerable<eDnevnik.Models.Profesori>
+@{
+    ViewBag.Title = "Почетна страница";
+    WebGrid grid = new WebGrid(Model);
+}
+<h2>Dobrodošli profesore Html.DisplayFor(model => model.ime) Html.DisplayFor(model => model.prezime)</h2>
+
+@grid.GetHtml();
+
+

@@ -5,67 +5,6 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="eDnevnik_v4Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="__MigrationHistory">
-          <Key>
-            <PropertyRef Name="MigrationId" />
-            <PropertyRef Name="ContextKey" />
-          </Key>
-          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
-          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
-          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
-          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="AspNetRoles">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
-        </EntityType>
-        <EntityType Name="AspNetUserClaims">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="ClaimType" Type="nvarchar(max)" />
-          <Property Name="ClaimValue" Type="nvarchar(max)" />
-        </EntityType>
-        <EntityType Name="AspNetUserLogins">
-          <Key>
-            <PropertyRef Name="LoginProvider" />
-            <PropertyRef Name="ProviderKey" />
-            <PropertyRef Name="UserId" />
-          </Key>
-          <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
-        </EntityType>
-        <EntityType Name="AspNetUserRoles">
-          <Key>
-            <PropertyRef Name="UserId" />
-            <PropertyRef Name="RoleId" />
-          </Key>
-          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
-        </EntityType>
-        <EntityType Name="AspNetUsers">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
-          <Property Name="Email" Type="nvarchar" MaxLength="256" />
-          <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
-          <Property Name="PasswordHash" Type="nvarchar(max)" />
-          <Property Name="SecurityStamp" Type="nvarchar(max)" />
-          <Property Name="PhoneNumber" Type="nvarchar(max)" />
-          <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
-          <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
-          <Property Name="LockoutEndDateUtc" Type="datetime" />
-          <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
-          <Property Name="AccessFailedCount" Type="int" Nullable="false" />
-          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
-        </EntityType>
         <EntityType Name="Dodeljene_ocene">
           <Key>
             <PropertyRef Name="ID_D_ocena" />
@@ -80,12 +19,11 @@
         </EntityType>
         <EntityType Name="Dodeljeni_profesori">
           <Key>
-            <PropertyRef Name="ID_odeljenje" />
-            <PropertyRef Name="ID_profesor" />
+            <PropertyRef Name="ID_dp" />
           </Key>
           <Property Name="ID_odeljenje" Type="int" Nullable="false" />
           <Property Name="ID_profesor" Type="int" Nullable="false" />
-          <Property Name="datum_dodele" Type="date" />
+          <Property Name="ID_dp" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Ocene">
           <Key>
@@ -115,18 +53,18 @@
         </EntityType>
         <EntityType Name="Predmetni_profesori">
           <Key>
-            <PropertyRef Name="ID_profesor" />
-            <PropertyRef Name="ID_predmet" />
+            <PropertyRef Name="ID_pp" />
           </Key>
           <Property Name="ID_profesor" Type="int" Nullable="false" />
           <Property Name="ID_predmet" Type="int" Nullable="false" />
-          <Property Name="datum_dodele" Type="date" />
+          <Property Name="ID_pp" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Profesori">
           <Key>
             <PropertyRef Name="ID_profesor" />
           </Key>
           <Property Name="ID_profesor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="nvarchar" MaxLength="128" />
           <Property Name="korisnicko_ime" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="lozinka" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="administrator" Type="bit" Nullable="false" />
@@ -144,6 +82,7 @@
             <PropertyRef Name="ID_ucenik" />
           </Key>
           <Property Name="ID_ucenik" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="nvarchar" MaxLength="128" />
           <Property Name="ime" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="prezime" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="ID_odeljenje" Type="int" Nullable="false" />
@@ -157,62 +96,6 @@
           <Property Name="lozinka" Type="nvarchar" MaxLength="50" />
           <Property Name="adresa" Type="nvarchar" MaxLength="200" />
         </EntityType>
-        <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetUsers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AspNetUserClaims">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetUsers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AspNetUserLogins">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
-          <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetRoles">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AspNetUserRoles">
-              <PropertyRef Name="RoleId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
-          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetUsers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AspNetUserRoles">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ocena">
           <End Role="Ocene" Type="Self.Ocene" Multiplicity="1" />
           <End Role="Dodeljene_ocene" Type="Self.Dodeljene_ocene" Multiplicity="*" />
@@ -334,12 +217,6 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="eDnevnik_v4ModelStoreContainer">
-          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Dodeljene_ocene" EntityType="Self.Dodeljene_ocene" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Dodeljeni_profesori" EntityType="Self.Dodeljeni_profesori" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Ocene" EntityType="Self.Ocene" Schema="dbo" store:Type="Tables" />
@@ -349,22 +226,6 @@
           <EntitySet Name="Profesori" EntityType="Self.Profesori" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tipovi_ocena" EntityType="Self.Tipovi_ocena" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Ucenici" EntityType="Self.Ucenici" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-            <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
-          </AssociationSet>
-          <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-            <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
-          </AssociationSet>
-          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
-            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
-            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
-          </AssociationSet>
-          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
-            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
-          </AssociationSet>
           <AssociationSet Name="FK_ocena" Association="Self.FK_ocena">
             <End Role="Ocene" EntitySet="Ocene" />
             <End Role="Dodeljene_ocene" EntitySet="Dodeljene_ocene" />
@@ -411,65 +272,6 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="eDnevnik_v4Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="C__MigrationHistory">
-          <Key>
-            <PropertyRef Name="MigrationId" />
-            <PropertyRef Name="ContextKey" />
-          </Key>
-          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
-          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
-        </EntityType>
-        <EntityType Name="AspNetRole">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
-        </EntityType>
-        <EntityType Name="AspNetUserClaim">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
-        </EntityType>
-        <EntityType Name="AspNetUserLogin">
-          <Key>
-            <PropertyRef Name="LoginProvider" />
-            <PropertyRef Name="ProviderKey" />
-            <PropertyRef Name="UserId" />
-          </Key>
-          <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
-        </EntityType>
-        <EntityType Name="AspNetUser">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
-          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
-          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
-          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
-          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
-          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
-          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
-          <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
-          <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
-          <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
-        </EntityType>
         <EntityType Name="Dodeljene_ocene">
           <Key>
             <PropertyRef Name="ID_D_ocena" />
@@ -488,12 +290,11 @@
         </EntityType>
         <EntityType Name="Dodeljeni_profesori">
           <Key>
-            <PropertyRef Name="ID_odeljenje" />
-            <PropertyRef Name="ID_profesor" />
+            <PropertyRef Name="ID_dp" />
           </Key>
           <Property Name="ID_odeljenje" Type="Int32" Nullable="false" />
           <Property Name="ID_profesor" Type="Int32" Nullable="false" />
-          <Property Name="datum_dodele" Type="DateTime" Precision="0" />
+          <Property Name="ID_dp" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Odeljenja" Relationship="Self.FK_odeljenje_DP" FromRole="Dodeljeni_profesori" ToRole="Odeljenja" />
           <NavigationProperty Name="Profesori" Relationship="Self.FK_profesor_DP" FromRole="Dodeljeni_profesori" ToRole="Profesori" />
         </EntityType>
@@ -515,7 +316,7 @@
           <Property Name="godina_skolovanja" Type="Int32" Nullable="false" />
           <Property Name="staresina" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Dodeljeni_profesori" Relationship="Self.FK_odeljenje_DP" FromRole="Odeljenja" ToRole="Dodeljeni_profesori" />
-          <NavigationProperty Name="Ucenicis" Relationship="Self.FK_odeljenje_U" FromRole="Odeljenja" ToRole="Ucenici" />
+          <NavigationProperty Name="Ucenici" Relationship="Self.FK_odeljenje_U" FromRole="Odeljenja" ToRole="Ucenici" />
           <NavigationProperty Name="Profesori" Relationship="Self.FK_staresina" FromRole="Odeljenja" ToRole="Profesori" />
         </EntityType>
         <EntityType Name="Predmeti">
@@ -531,12 +332,11 @@
         </EntityType>
         <EntityType Name="Predmetni_profesori">
           <Key>
-            <PropertyRef Name="ID_profesor" />
-            <PropertyRef Name="ID_predmet" />
+            <PropertyRef Name="ID_pp" />
           </Key>
           <Property Name="ID_profesor" Type="Int32" Nullable="false" />
           <Property Name="ID_predmet" Type="Int32" Nullable="false" />
-          <Property Name="datum_dodele" Type="DateTime" Precision="0" />
+          <Property Name="ID_pp" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Predmeti" Relationship="Self.FK_predmet_P" FromRole="Predmetni_profesori" ToRole="Predmeti" />
           <NavigationProperty Name="Profesori" Relationship="Self.FK_profesor_P" FromRole="Predmetni_profesori" ToRole="Profesori" />
         </EntityType>
@@ -545,13 +345,14 @@
             <PropertyRef Name="ID_profesor" />
           </Key>
           <Property Name="ID_profesor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <Property Name="korisnicko_ime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="lozinka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="administrator" Type="Boolean" Nullable="false" />
           <Property Name="ime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="prezime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Dodeljeni_profesori" Relationship="Self.FK_profesor_DP" FromRole="Profesori" ToRole="Dodeljeni_profesori" />
-          <NavigationProperty Name="Odeljenjas" Relationship="Self.FK_staresina" FromRole="Profesori" ToRole="Odeljenja" />
+          <NavigationProperty Name="Odeljenja" Relationship="Self.FK_staresina" FromRole="Profesori" ToRole="Odeljenja" />
           <NavigationProperty Name="Predmetni_profesori" Relationship="Self.FK_profesor_P" FromRole="Profesori" ToRole="Predmetni_profesori" />
         </EntityType>
         <EntityType Name="Tipovi_ocena">
@@ -566,6 +367,7 @@
             <PropertyRef Name="ID_ucenik" />
           </Key>
           <Property Name="ID_ucenik" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <Property Name="ime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="prezime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ID_odeljenje" Type="Int32" Nullable="false" />
@@ -581,34 +383,6 @@
           <NavigationProperty Name="Dodeljene_ocene" Relationship="Self.FK_ucenik" FromRole="Ucenici" ToRole="Dodeljene_ocene" />
           <NavigationProperty Name="Odeljenja" Relationship="Self.FK_odeljenje_U" FromRole="Ucenici" ToRole="Odeljenja" />
         </EntityType>
-        <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-          <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetUsers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AspNetUserClaims">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-          <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="AspNetUsers">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AspNetUserLogins">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_ocena">
           <End Role="Ocene" Type="Self.Ocene" Multiplicity="1" />
           <End Role="Dodeljene_ocene" Type="Self.Dodeljene_ocene" Multiplicity="*" />
@@ -729,39 +503,22 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="AspNetUserRoles">
-          <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
-          <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
-        </Association>
-        <EntityContainer Name="eDnevnik_v4Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
-          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
-          <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
-          <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
-          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+        <EntityContainer Name="eDnevnik_v4Entities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Dodeljene_ocene" EntityType="Self.Dodeljene_ocene" />
           <EntitySet Name="Dodeljeni_profesori" EntityType="Self.Dodeljeni_profesori" />
-          <EntitySet Name="Ocenes" EntityType="Self.Ocene" />
-          <EntitySet Name="Odeljenjas" EntityType="Self.Odeljenja" />
-          <EntitySet Name="Predmetis" EntityType="Self.Predmeti" />
+          <EntitySet Name="Ocene" EntityType="Self.Ocene" />
+          <EntitySet Name="Odeljenja" EntityType="Self.Odeljenja" />
+          <EntitySet Name="Predmeti" EntityType="Self.Predmeti" />
           <EntitySet Name="Predmetni_profesori" EntityType="Self.Predmetni_profesori" />
-          <EntitySet Name="Profesoris" EntityType="Self.Profesori" />
+          <EntitySet Name="Profesori" EntityType="Self.Profesori" />
           <EntitySet Name="Tipovi_ocena" EntityType="Self.Tipovi_ocena" />
-          <EntitySet Name="Ucenicis" EntityType="Self.Ucenici" />
-          <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-            <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
-          </AssociationSet>
-          <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-            <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
-          </AssociationSet>
+          <EntitySet Name="Ucenici" EntityType="Self.Ucenici" />
           <AssociationSet Name="FK_ocena" Association="Self.FK_ocena">
-            <End Role="Ocene" EntitySet="Ocenes" />
+            <End Role="Ocene" EntitySet="Ocene" />
             <End Role="Dodeljene_ocene" EntitySet="Dodeljene_ocene" />
           </AssociationSet>
           <AssociationSet Name="FK_predmet" Association="Self.FK_predmet">
-            <End Role="Predmeti" EntitySet="Predmetis" />
+            <End Role="Predmeti" EntitySet="Predmeti" />
             <End Role="Dodeljene_ocene" EntitySet="Dodeljene_ocene" />
           </AssociationSet>
           <AssociationSet Name="FK_tip_ocene" Association="Self.FK_tip_ocene">
@@ -769,36 +526,32 @@
             <End Role="Dodeljene_ocene" EntitySet="Dodeljene_ocene" />
           </AssociationSet>
           <AssociationSet Name="FK_ucenik" Association="Self.FK_ucenik">
-            <End Role="Ucenici" EntitySet="Ucenicis" />
+            <End Role="Ucenici" EntitySet="Ucenici" />
             <End Role="Dodeljene_ocene" EntitySet="Dodeljene_ocene" />
           </AssociationSet>
           <AssociationSet Name="FK_odeljenje_DP" Association="Self.FK_odeljenje_DP">
-            <End Role="Odeljenja" EntitySet="Odeljenjas" />
+            <End Role="Odeljenja" EntitySet="Odeljenja" />
             <End Role="Dodeljeni_profesori" EntitySet="Dodeljeni_profesori" />
           </AssociationSet>
           <AssociationSet Name="FK_profesor_DP" Association="Self.FK_profesor_DP">
-            <End Role="Profesori" EntitySet="Profesoris" />
+            <End Role="Profesori" EntitySet="Profesori" />
             <End Role="Dodeljeni_profesori" EntitySet="Dodeljeni_profesori" />
           </AssociationSet>
           <AssociationSet Name="FK_odeljenje_U" Association="Self.FK_odeljenje_U">
-            <End Role="Odeljenja" EntitySet="Odeljenjas" />
-            <End Role="Ucenici" EntitySet="Ucenicis" />
+            <End Role="Odeljenja" EntitySet="Odeljenja" />
+            <End Role="Ucenici" EntitySet="Ucenici" />
           </AssociationSet>
           <AssociationSet Name="FK_staresina" Association="Self.FK_staresina">
-            <End Role="Profesori" EntitySet="Profesoris" />
-            <End Role="Odeljenja" EntitySet="Odeljenjas" />
+            <End Role="Profesori" EntitySet="Profesori" />
+            <End Role="Odeljenja" EntitySet="Odeljenja" />
           </AssociationSet>
           <AssociationSet Name="FK_predmet_P" Association="Self.FK_predmet_P">
-            <End Role="Predmeti" EntitySet="Predmetis" />
+            <End Role="Predmeti" EntitySet="Predmeti" />
             <End Role="Predmetni_profesori" EntitySet="Predmetni_profesori" />
           </AssociationSet>
           <AssociationSet Name="FK_profesor_P" Association="Self.FK_profesor_P">
-            <End Role="Profesori" EntitySet="Profesoris" />
+            <End Role="Profesori" EntitySet="Profesori" />
             <End Role="Predmetni_profesori" EntitySet="Predmetni_profesori" />
-          </AssociationSet>
-          <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
-            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
-            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -806,62 +559,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="eDnevnik_v4ModelStoreContainer" CdmEntityContainer="eDnevnik_v4Entities">
-          <EntitySetMapping Name="C__MigrationHistory">
-            <EntityTypeMapping TypeName="eDnevnik_v4Model.C__MigrationHistory">
-              <MappingFragment StoreEntitySet="__MigrationHistory">
-                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
-                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
-                <ScalarProperty Name="Model" ColumnName="Model" />
-                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="AspNetRoles">
-            <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetRole">
-              <MappingFragment StoreEntitySet="AspNetRoles">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="AspNetUserClaims">
-            <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetUserClaim">
-              <MappingFragment StoreEntitySet="AspNetUserClaims">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
-                <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="AspNetUserLogins">
-            <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetUserLogin">
-              <MappingFragment StoreEntitySet="AspNetUserLogins">
-                <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
-                <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="AspNetUsers">
-            <EntityTypeMapping TypeName="eDnevnik_v4Model.AspNetUser">
-              <MappingFragment StoreEntitySet="AspNetUsers">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
-                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
-                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
-                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-                <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
-                <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
-                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
-                <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
-                <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
-                <ScalarProperty Name="UserName" ColumnName="UserName" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
+        <EntityContainerMapping StorageEntityContainer="eDnevnik_v4ModelStoreContainer" CdmEntityContainer="eDnevnik_v4Entities2">
           <EntitySetMapping Name="Dodeljene_ocene">
             <EntityTypeMapping TypeName="eDnevnik_v4Model.Dodeljene_ocene">
               <MappingFragment StoreEntitySet="Dodeljene_ocene">
@@ -880,11 +578,11 @@
               <MappingFragment StoreEntitySet="Dodeljeni_profesori">
                 <ScalarProperty Name="ID_odeljenje" ColumnName="ID_odeljenje" />
                 <ScalarProperty Name="ID_profesor" ColumnName="ID_profesor" />
-                <ScalarProperty Name="datum_dodele" ColumnName="datum_dodele" />
+                <ScalarProperty Name="ID_dp" ColumnName="ID_dp" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Ocenes">
+          <EntitySetMapping Name="Ocene">
             <EntityTypeMapping TypeName="eDnevnik_v4Model.Ocene">
               <MappingFragment StoreEntitySet="Ocene">
                 <ScalarProperty Name="ID_ocena" ColumnName="ID_ocena" />
@@ -893,7 +591,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Odeljenjas">
+          <EntitySetMapping Name="Odeljenja">
             <EntityTypeMapping TypeName="eDnevnik_v4Model.Odeljenja">
               <MappingFragment StoreEntitySet="Odeljenja">
                 <ScalarProperty Name="ID_odeljenje" ColumnName="ID_odeljenje" />
@@ -903,7 +601,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Predmetis">
+          <EntitySetMapping Name="Predmeti">
             <EntityTypeMapping TypeName="eDnevnik_v4Model.Predmeti">
               <MappingFragment StoreEntitySet="Predmeti">
                 <ScalarProperty Name="ID_predmet" ColumnName="ID_predmet" />
@@ -918,14 +616,15 @@
               <MappingFragment StoreEntitySet="Predmetni_profesori">
                 <ScalarProperty Name="ID_profesor" ColumnName="ID_profesor" />
                 <ScalarProperty Name="ID_predmet" ColumnName="ID_predmet" />
-                <ScalarProperty Name="datum_dodele" ColumnName="datum_dodele" />
+                <ScalarProperty Name="ID_pp" ColumnName="ID_pp" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Profesoris">
+          <EntitySetMapping Name="Profesori">
             <EntityTypeMapping TypeName="eDnevnik_v4Model.Profesori">
               <MappingFragment StoreEntitySet="Profesori">
                 <ScalarProperty Name="ID_profesor" ColumnName="ID_profesor" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="korisnicko_ime" ColumnName="korisnicko_ime" />
                 <ScalarProperty Name="lozinka" ColumnName="lozinka" />
                 <ScalarProperty Name="administrator" ColumnName="administrator" />
@@ -941,10 +640,11 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Ucenicis">
+          <EntitySetMapping Name="Ucenici">
             <EntityTypeMapping TypeName="eDnevnik_v4Model.Ucenici">
               <MappingFragment StoreEntitySet="Ucenici">
                 <ScalarProperty Name="ID_ucenik" ColumnName="ID_ucenik" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="ime" ColumnName="ime" />
                 <ScalarProperty Name="prezime" ColumnName="prezime" />
                 <ScalarProperty Name="ID_odeljenje" ColumnName="ID_odeljenje" />
@@ -960,14 +660,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <AssociationSetMapping Name="AspNetUserRoles" TypeName="eDnevnik_v4Model.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
-            <EndProperty Name="AspNetRoles">
-              <ScalarProperty Name="Id" ColumnName="RoleId" />
-            </EndProperty>
-            <EndProperty Name="AspNetUsers">
-              <ScalarProperty Name="Id" ColumnName="UserId" />
-            </EndProperty>
-          </AssociationSetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -982,7 +674,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

@@ -29,5 +29,7 @@ namespace eDnevnik.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<eDnevnik.Models.Profesori> Profesoris { get; set; }
     }
 }

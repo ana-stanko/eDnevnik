@@ -113,128 +113,247 @@ C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.DependencyCollector.xm
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.Web.xml
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CoreCompileInputs.cache
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CopyComplete
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.dll
 C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.pdb
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\ApplicationInsights.config
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\eDnevnik.dll.config
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\eDnevnik.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\eDnevnik.pdb
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\csc.exe
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\csc.exe.config
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\csc.rsp
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\csi.exe
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\csi.exe.config
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\csi.rsp
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.AppContext.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Console.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.IO.Compression.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.Claims.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.ValueTuple.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\vbc.exe
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\vbc.exe.config
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\vbc.rsp
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\VBCSCompiler.exe
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Antlr3.Runtime.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\EntityFramework.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\EntityFramework.SqlServer.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.Web.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Newtonsoft.Json.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Owin.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Helpers.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Mvc.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Optimization.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Razor.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.WebPages.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.WebPages.Razor.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\WebGrease.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Helpers.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Mvc.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Optimization.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.Razor.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.WebPages.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Web.WebPages.Razor.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Newtonsoft.Json.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Antlr3.Runtime.pdb
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\EntityFramework.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\EntityFramework.SqlServer.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.Web.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CopyComplete
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.dll
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.pdb
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
+C:\Users\ivanb\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
+D:\Ana\eDnevnik-master\eDnevnik\bin\ApplicationInsights.config
+D:\Ana\eDnevnik-master\eDnevnik\bin\eDnevnik.dll.config
+D:\Ana\eDnevnik-master\eDnevnik\bin\eDnevnik.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\eDnevnik.pdb
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\csc.exe
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\csc.exe.config
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\csc.rsp
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\csi.exe
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\csi.exe.config
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\csi.rsp
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.AppContext.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Collections.Immutable.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Console.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.IO.Compression.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.IO.FileSystem.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.IO.Pipes.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.AccessControl.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.Claims.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.ValueTuple.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Xml.XPath.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\vbc.exe
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\vbc.exe.config
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\vbc.rsp
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\VBCSCompiler.exe
+D:\Ana\eDnevnik-master\eDnevnik\bin\roslyn\VBCSCompiler.exe.config
+D:\Ana\eDnevnik-master\eDnevnik\bin\Antlr3.Runtime.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\EntityFramework.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\EntityFramework.SqlServer.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.DependencyCollector.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.Web.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.WindowsServer.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.ApplicationInsights.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Google.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Web.Infrastructure.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Newtonsoft.Json.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\Owin.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Helpers.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Mvc.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Optimization.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Razor.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.WebPages.Deployment.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.WebPages.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.WebPages.Razor.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\WebGrease.dll
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Helpers.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Mvc.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Optimization.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.Razor.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.WebPages.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.WebPages.Deployment.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Web.WebPages.Razor.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Newtonsoft.Json.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Antlr3.Runtime.pdb
+D:\Ana\eDnevnik-master\eDnevnik\bin\EntityFramework.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\EntityFramework.SqlServer.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Google.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.DependencyCollector.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.WindowsServer.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.AI.Web.xml
+D:\Ana\eDnevnik-master\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ana\eDnevnik-master\eDnevnik\obj\Debug\eDnevnik.csproj.CoreCompileInputs.cache
+D:\Ana\eDnevnik-master\eDnevnik\obj\Debug\eDnevnik.csproj.CopyComplete
+D:\Ana\eDnevnik-master\eDnevnik\obj\Debug\eDnevnik.dll
+D:\Ana\eDnevnik-master\eDnevnik\obj\Debug\eDnevnik.pdb
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\ApplicationInsights.config
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\eDnevnik.dll.config
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\eDnevnik.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\eDnevnik.pdb
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\csc.exe
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\csc.exe.config
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\csc.rsp
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\csi.exe
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\csi.exe.config
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\csi.rsp
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.AppContext.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Collections.Immutable.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Console.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.IO.Compression.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.IO.FileSystem.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.IO.Pipes.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.AccessControl.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.Claims.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.ValueTuple.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Xml.XPath.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\vbc.exe
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\vbc.exe.config
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\vbc.rsp
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\VBCSCompiler.exe
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\roslyn\VBCSCompiler.exe.config
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Antlr3.Runtime.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\EntityFramework.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\EntityFramework.SqlServer.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.DependencyCollector.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.Web.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.WindowsServer.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.ApplicationInsights.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Google.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Web.Infrastructure.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Newtonsoft.Json.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Owin.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Helpers.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Mvc.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Optimization.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Razor.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.WebPages.Deployment.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.WebPages.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.WebPages.Razor.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\WebGrease.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Helpers.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Mvc.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Optimization.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.Razor.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.WebPages.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.WebPages.Deployment.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Web.WebPages.Razor.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Newtonsoft.Json.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Antlr3.Runtime.pdb
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\EntityFramework.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\EntityFramework.SqlServer.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Google.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.DependencyCollector.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.WindowsServer.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.AI.Web.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\obj\Debug\eDnevnik.csproj.CoreCompileInputs.cache
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\obj\Debug\eDnevnik.csproj.CopyComplete
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\obj\Debug\eDnevnik.dll
+D:\Ana\eDnevnik-master - manje modela\eDnevnik\obj\Debug\eDnevnik.pdb

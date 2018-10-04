@@ -11,16 +11,18 @@ namespace eDnevnik.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Odeljenja
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Odeljenja()
         {
             this.Dodeljeni_profesori = new HashSet<Dodeljeni_profesori>();
-            this.Ucenicis = new HashSet<Ucenici>();
+            this.Ucenici = new HashSet<Ucenici>();
         }
-    
+
+        [Key]
         public int ID_odeljenje { get; set; }
         public int broj_odeljenja { get; set; }
         public int godina_skolovanja { get; set; }
@@ -29,7 +31,7 @@ namespace eDnevnik.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Dodeljeni_profesori> Dodeljeni_profesori { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ucenici> Ucenicis { get; set; }
+        public virtual ICollection<Ucenici> Ucenici { get; set; }
         public virtual Profesori Profesori { get; set; }
     }
 }
