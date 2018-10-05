@@ -200,6 +200,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
+    <Compile Include="Controllers\ProfesorScaffController.cs" />
+    <Compile Include="Controllers\UcenikController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -332,6 +334,18 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Profesor\IndexList.cshtml" />
     <Content Include="Views\Profesor\Index.cshtml" />
+    <Content Include="Views\Profesor\NoviProfesor.cshtml" />
+    <Content Include="Views\Ucenik\NoviUcenik.cshtml" />
+    <Content Include="Views\ProfesoriScaff\Create.cshtml" />
+    <Content Include="Views\ProfesoriScaff\Delete.cshtml" />
+    <Content Include="Views\ProfesoriScaff\Details.cshtml" />
+    <Content Include="Views\ProfesoriScaff\Edit.cshtml" />
+    <Content Include="Views\ProfesoriScaff\Index.cshtml" />
+    <Content Include="Views\ProfesorScaff\Create.cshtml" />
+    <Content Include="Views\ProfesorScaff\Delete.cshtml" />
+    <Content Include="Views\ProfesorScaff\Details.cshtml" />
+    <Content Include="Views\ProfesorScaff\Edit.cshtml" />
+    <Content Include="Views\ProfesorScaff\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

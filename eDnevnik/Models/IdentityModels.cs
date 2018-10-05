@@ -31,5 +31,9 @@ namespace eDnevnik.Models
         }
 
         public System.Data.Entity.DbSet<eDnevnik.Models.Profesori> Profesoris { get; set; }
+
+        public System.Data.Entity.DbSet<eDnevnik.Models.Ucenici> Ucenicis { get; set; }
+
+        public System.Data.Entity.DbSet<eDnevnik.Models.Odeljenja> Odeljenjas { get; set; }
     }
 }

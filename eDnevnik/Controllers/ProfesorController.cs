@@ -37,5 +37,13 @@ namespace eDnevnik.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult NoviProfesor()
+        {
+            return View();
+        }
+
+       
+
     }
 }
