@@ -1,0 +1,50 @@
+﻿@model eDnevnik.Models.Profesori
+
+@{
+    ViewBag.Title = "Profil";
+}
+
+<h3>Преглед профила</h3>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prezime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prezime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.korisnicko_ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.korisnicko_ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.administrator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.administrator)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Измени профил", "IzmenaProfila", new { id = Model.ID_profesor }) |
+    @Html.ActionLink("Повратак", "Pocetna", new { id = Model.ID_profesor })
+</p>

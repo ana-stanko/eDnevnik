@@ -1,0 +1,12 @@
+﻿@model eDnevnik.Models.Profesori
+
+@{
+    ViewBag.Title = "Pocetna";
+}
+
+
+<h2>Добродошли професоре @Html.DisplayFor(model => model.ime) @Html.DisplayFor(model => model.prezime)</h2>
+
+@Html.ActionLink("Измена оцена", "Ocene", new { id = Model.ID_profesor }) |
+@Html.ActionLink("Преглед профила", "Profil", new { id = Model.ID_profesor })|
+@Html.ActionLink("Излогујте се", "LogOff", "Account", new { id = Model.ID_profesor })

@@ -18,6 +18,7 @@ namespace eDnevnik.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Profesori()
         {
+            
             this.Dodeljeni_profesori = new HashSet<Dodeljeni_profesori>();
             this.Odeljenja = new HashSet<Odeljenja>();
             this.Predmetni_profesori = new HashSet<Predmetni_profesori>();

@@ -20,7 +20,7 @@ namespace eDnevnik.Models
         {
             this.Dodeljene_ocene = new HashSet<Dodeljene_ocene>();
         }
-    
+
         [Key]
         public int ID_ocena { get; set; }
         public string ocena { get; set; }

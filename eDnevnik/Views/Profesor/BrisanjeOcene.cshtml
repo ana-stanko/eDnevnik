@@ -1,0 +1,72 @@
+﻿@model eDnevnik.Models.Dodeljene_ocene
+
+@{
+    ViewBag.Title = "BrisanjeOcene";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Dodeljene_ocene</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.datum_unosa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_unosa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.komentar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.komentar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ocene.ocena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ocene.ocena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Predmeti.naziv_predmeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Predmeti.naziv_predmeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipovi_ocena.tip_ocene)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipovi_ocena.tip_ocene)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ucenici.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ucenici.Id)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Назад", "Pocetna")
+        </div>
+    }
+</div>

@@ -1,0 +1,66 @@
+﻿@model eDnevnik.Models.Dodeljene_ocene
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dodeljene_ocene</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.datum_unosa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum_unosa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.komentar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.komentar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ocene.ocena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ocene.ocena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Predmeti.naziv_predmeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Predmeti.naziv_predmeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipovi_ocena.tip_ocene)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipovi_ocena.tip_ocene)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ucenici.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ucenici.Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_D_ocena }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

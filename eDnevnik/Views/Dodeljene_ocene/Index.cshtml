@@ -1,0 +1,63 @@
+﻿@model IEnumerable<eDnevnik.Models.Dodeljene_ocene>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.datum_unosa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.komentar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ocene.ocena)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Predmeti.naziv_predmeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipovi_ocena.tip_ocene)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ucenici.Id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.datum_unosa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.komentar)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ocene.ocena)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Predmeti.naziv_predmeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipovi_ocena.tip_ocene)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ucenici.Id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_D_ocena }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_D_ocena }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_D_ocena })
+        </td>
+    </tr>
+}
+
+</table>

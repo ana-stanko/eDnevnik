@@ -1,0 +1,55 @@
+﻿@model IEnumerable<eDnevnik.Models.UcenikOceneJoin>
+
+@{
+    ViewBag.Title = "Ocene";
+}
+
+<h2>IzmenaOcena1</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Шифра ученика
+        </th>
+        <th>
+            Име, Презиме
+        </th>
+        <th>
+            Шифра одељења
+        </th>
+        <th>
+            Оцене
+        </th>
+        <th>
+            Промени
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ucenikJoin.ID_ucenik)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ucenikJoin.ime) @Html.DisplayFor(modelItem => item.ucenikJoin.prezime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ucenikJoin.ID_odeljenje)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ucenikOceneJoin.ocena)
+            </td>
+            <td>
+                @Html.ActionLink("Нова оцена", "NovaOcena", new { id = item.ucenikJoin.ID_ucenik }) |
+                @Html.ActionLink("Измени", "Izmeni", new { id = item.ucenikDodeljeneJoin.ID_D_ocena }) |
+            </td>
+        </tr>
+    }
+
+</table>

@@ -12,6 +12,7 @@ namespace eDnevnik.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
 
     public partial class Predmeti
     {
@@ -26,8 +27,11 @@ namespace eDnevnik.Models
         public int ID_predmet { get; set; }
         public int redni_broj { get; set; }
         public string naziv_predmeta { get; set; }
+        public IEnumerable<SelectListItem> naziv_predmetaList { get; set; }
         public string opis_predmeta { get; set; }
-    
+
+        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Dodeljene_ocene> Dodeljene_ocene { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

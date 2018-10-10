@@ -34,5 +34,7 @@ namespace eDnevnik.Models
         public virtual DbSet<Profesori> Profesori { get; set; }
         public virtual DbSet<Tipovi_ocena> Tipovi_ocena { get; set; }
         public virtual DbSet<Ucenici> Ucenici { get; set; }
+
+        public System.Data.Entity.DbSet<eDnevnik.Models.UcenikOceneJoin> UcenikOceneJoins { get; set; }
     }
 }

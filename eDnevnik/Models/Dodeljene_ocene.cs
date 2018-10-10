@@ -17,6 +17,7 @@ namespace eDnevnik.Models
     {
         [Key]
         public int ID_D_ocena { get; set; }
+
         public int ID_ucenik { get; set; }
         public int ID_predmet { get; set; }
         public int ID_ocena { get; set; }
@@ -28,5 +29,10 @@ namespace eDnevnik.Models
         public virtual Predmeti Predmeti { get; set; }
         public virtual Tipovi_ocena Tipovi_ocena { get; set; }
         public virtual Ucenici Ucenici { get; set; }
+
+        public static implicit operator Dodeljene_ocene(Ocene v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

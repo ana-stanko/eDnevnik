@@ -197,16 +197,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Dodeljene_oceneController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Profesor1Controller.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
-    <Compile Include="Controllers\ProfesorScaffController.cs" />
-    <Compile Include="Controllers\UcenikController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationContext.cs" />
+    <Compile Include="Models\UcenikOceneJoin.cs" />
     <Compile Include="Models\Dodeljene_ocene.cs">
       <DependentUpon>Modeli.tt</DependentUpon>
     </Compile>
@@ -332,20 +333,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Profesor\IndexList.cshtml" />
     <Content Include="Views\Profesor\Index.cshtml" />
-    <Content Include="Views\Profesor\NoviProfesor.cshtml" />
-    <Content Include="Views\Ucenik\NoviUcenik.cshtml" />
-    <Content Include="Views\ProfesoriScaff\Create.cshtml" />
-    <Content Include="Views\ProfesoriScaff\Delete.cshtml" />
-    <Content Include="Views\ProfesoriScaff\Details.cshtml" />
-    <Content Include="Views\ProfesoriScaff\Edit.cshtml" />
-    <Content Include="Views\ProfesoriScaff\Index.cshtml" />
-    <Content Include="Views\ProfesorScaff\Create.cshtml" />
-    <Content Include="Views\ProfesorScaff\Delete.cshtml" />
-    <Content Include="Views\ProfesorScaff\Details.cshtml" />
-    <Content Include="Views\ProfesorScaff\Edit.cshtml" />
-    <Content Include="Views\ProfesorScaff\Index.cshtml" />
+    <Content Include="Views\Profesor\Ocene.cshtml" />
+    <Content Include="Views\Profesor\Unesi1.cshtml" />
+    <Content Include="Views\Dodeljene_ocene\Create.cshtml" />
+    <Content Include="Views\Dodeljene_ocene\Delete.cshtml" />
+    <Content Include="Views\Dodeljene_ocene\Details.cshtml" />
+    <Content Include="Views\Dodeljene_ocene\Edit.cshtml" />
+    <Content Include="Views\Dodeljene_ocene\Index.cshtml" />
+    <Content Include="Views\Profesor\Profil.cshtml" />
+    <Content Include="Views\Profesor\IzmenaProfila.cshtml" />
+    <Content Include="Views\Profesor\Pocetna.cshtml" />
+    <Content Include="Views\Profesor\NovaOcena.cshtml" />
+    <Content Include="Views\Profesor\IzmenaOcene.cshtml" />
+    <Content Include="Views\Profesor\BrisanjeOcene.cshtml" />
+    <Content Include="Views\Profesor\Izmeni.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

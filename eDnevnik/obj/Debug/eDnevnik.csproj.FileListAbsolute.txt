@@ -472,8 +472,8 @@ C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.DependencyCollector.x
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.AI.Web.xml
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.dll
 C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.pdb
+C:\Users\Lenovo\Desktop\eDnevnik\eDnevnik\obj\Debug\eDnevnik.csprojAssemblyReference.cache
