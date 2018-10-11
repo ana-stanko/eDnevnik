@@ -137,6 +137,11 @@ namespace eDnevnik.Controllers
         // GET: Dodeljene_ocene/Edit/5
         public ActionResult IzmenaOcene(int? id)
         {
+
+            var ocena = db.Ocene.Select(s => new {Text = s.ocena + " " + s.opis, Value = s.ID_ocena}).ToList();
+
+            ViewBag.OcenaList = new SelectList(ocena, "Value", "Text");
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
