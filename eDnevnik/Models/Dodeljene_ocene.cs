@@ -24,10 +24,14 @@ namespace eDnevnik.Models
         public int ID_ucenik { get; set; }
         public int ID_predmet { get; set; }
         public int ID_ocena { get; set; }
-        public System.DateTime datum_unosa { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd.MM.yyyy}")]
+        public DateTime datum_unosa { get; set; }
+        
         public string tip_ocene { get; set; }
         public string komentar { get; set; }
-    
+
+
         public virtual Ocene Ocene { get; set; }
         public virtual Predmeti Predmeti { get; set; }
         public virtual Tipovi_ocena Tipovi_ocena { get; set; }
