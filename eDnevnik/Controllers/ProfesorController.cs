@@ -138,7 +138,7 @@ namespace eDnevnik.Controllers
         public ActionResult IzmenaOcene(int? id)
         {
 
-            var ocena = db.Ocene.Select(s => new {Text = s.ocena + " " + s.opis, Value = s.ID_ocena}).ToList();
+            var ocena = db.Ocene.Select(s => new {Text = s.ocena + " (" + s.opis +")", Value = s.ID_ocena}).ToList();
 
             ViewBag.OcenaList = new SelectList(ocena, "Value", "Text");
 
