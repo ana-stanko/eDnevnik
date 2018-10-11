@@ -13,6 +13,9 @@ namespace eDnevnik.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
+    
+
+
     public partial class Dodeljene_ocene
     {
         [Key]

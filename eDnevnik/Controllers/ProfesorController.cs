@@ -125,6 +125,15 @@ namespace eDnevnik.Controllers
         }
 
 
+        // GET: Dodeljene_ocene/Details/5
+        public ActionResult Izmeni()
+        {
+            var dodeljene_ocene = db.Dodeljene_ocene.Include(d => d.Ocene).Include(d => d.Predmeti).Include(d => d.Tipovi_ocena).Include(d => d.Ucenici);
+
+            return View(dodeljene_ocene.ToList());
+        }
+
+
         // GET: Dodeljene_ocene/Edit/5
         public ActionResult IzmenaOcene(int? id)
         {
@@ -155,7 +164,7 @@ namespace eDnevnik.Controllers
             {
                 db.Entry(dodeljene_ocene).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Pocetna");
+                return RedirectToAction("Izmeni");
             }
             ViewBag.ID_ocena = new SelectList(db.Ocene, "ID_ocena", "ocena", dodeljene_ocene.ID_ocena);
             ViewBag.ID_predmet = new SelectList(db.Predmeti, "ID_predmet", "naziv_predmeta", dodeljene_ocene.ID_predmet);
@@ -187,17 +196,10 @@ namespace eDnevnik.Controllers
             Dodeljene_ocene dodeljene_ocene = db.Dodeljene_ocene.Find(id);
             db.Dodeljene_ocene.Remove(dodeljene_ocene);
             db.SaveChanges();
-            return RedirectToAction("Pocetna");
+            return RedirectToAction("Izmeni");
         }
 
 
-        // GET: Dodeljene_ocene/Details/5
-        public ActionResult Izmeni()
-        {
-            var dodeljene_ocene = db.Dodeljene_ocene.Include(d => d.Ocene).Include(d => d.Predmeti).Include(d => d.Tipovi_ocena).Include(d => d.Ucenici);
-
-            return View(dodeljene_ocene.ToList());
-        }
 
 
     }

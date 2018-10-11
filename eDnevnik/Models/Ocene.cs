@@ -12,6 +12,7 @@ namespace eDnevnik.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
 
     public partial class Ocene
     {
@@ -24,8 +25,10 @@ namespace eDnevnik.Models
         [Key]
         public int ID_ocena { get; set; }
         public string ocena { get; set; }
+        public IEnumerable<SelectListItem> ocenaList { get; set; }
         public string opis { get; set; }
-    
+        public IEnumerable<SelectListItem> opisList { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Dodeljene_ocene> Dodeljene_ocene { get; set; }
     }

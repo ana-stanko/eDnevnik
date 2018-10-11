@@ -335,7 +335,6 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Profesor\Index.cshtml" />
     <Content Include="Views\Profesor\Ocene.cshtml" />
-    <Content Include="Views\Profesor\Unesi1.cshtml" />
     <Content Include="Views\Dodeljene_ocene\Create.cshtml" />
     <Content Include="Views\Dodeljene_ocene\Delete.cshtml" />
     <Content Include="Views\Dodeljene_ocene\Details.cshtml" />
@@ -345,9 +344,9 @@
     <Content Include="Views\Profesor\IzmenaProfila.cshtml" />
     <Content Include="Views\Profesor\Pocetna.cshtml" />
     <Content Include="Views\Profesor\NovaOcena.cshtml" />
-    <Content Include="Views\Profesor\IzmenaOcene.cshtml" />
     <Content Include="Views\Profesor\BrisanjeOcene.cshtml" />
     <Content Include="Views\Profesor\Izmeni.cshtml" />
+    <Content Include="Views\Profesor\IzmenaOcene.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

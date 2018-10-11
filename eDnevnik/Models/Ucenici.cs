@@ -12,6 +12,7 @@ namespace eDnevnik.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
 
     public partial class Ucenici
     {
@@ -25,7 +26,9 @@ namespace eDnevnik.Models
         public int ID_ucenik { get; set; }
         public string Id { get; set; }
         public string ime { get; set; }
+        public IEnumerable<SelectListItem> imeList { get; set; }
         public string prezime { get; set; }
+        public IEnumerable<SelectListItem> prezimeList { get; set; }
         public int ID_odeljenje { get; set; }
         public System.DateTime godina_upisa { get; set; }
         public Nullable<bool> pol { get; set; }
