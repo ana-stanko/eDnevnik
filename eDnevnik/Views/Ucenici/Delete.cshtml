@@ -1,0 +1,69 @@
+﻿@model eDnevnik.Models.Ucenici
+
+<h2>Delete Ucenici</h2>
+@using (Html.BeginForm("delete", "Ucenici", FormMethod.Post, new { id = "popupForm" }))
+{
+
+    @Html.HiddenFor(a => a.ID_ucenik)
+
+    <div class="form-group">
+        <label>Ime</label>
+        <p>@Model.ime</p>
+    </div>
+
+    <div class="form-group">
+        <label>Prezime</label>
+        <p>@Model.prezime</p>
+    </div>
+
+    //<div class="form-group">
+       @* <label>Odeljenje</label>*@
+        @*<p>@Model.ID_odeljenje</p>*@
+   // </div>
+
+    <div class="form-group">
+        <label>Godina studija</label>
+        <p>@Model.godina_upisa</p>
+    </div>
+
+    <div class="form-group">
+        <label>Pol</label>
+        <p>@Model.pol</p>
+    </div>
+
+    <div class="form-group">
+        <label>Datum rodjenja</label>
+        <p>@Model.datum_rodjenja</p>
+    </div>
+
+    <div class="form-group">
+        <label>JMBG</label>
+        <p>@Model.JMBG</p>
+    </div>
+
+    <div class="form-group">
+        <label>Roditelj/Staratelj</label>
+        <p>@Model.roditelj_staratelj</p>
+    </div>
+
+    <div class="form-group">
+        <label>Kontakt telefon</label>
+        <p>@Model.kontakt_telefon</p>
+    </div>
+    <div class="form-group">
+        <label>Korisnicko ime</label>
+        <p>@Model.korisnicko_ime</p>
+    </div>
+    <div class="form-group">
+        <label>Lozinka</label>
+        <p>@Model.lozinka</p>
+    </div>
+    <div class="form-group">
+        <label>Adresa</label>
+        <p>@Model.adresa</p>
+    </div>
+    <div>
+        <input type="submit" value="Delete" />
+    </div>
+
+}

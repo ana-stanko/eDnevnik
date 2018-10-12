@@ -1,0 +1,102 @@
+﻿@model eDnevnik.Models.Ucenici
+
+<h2>Save</h2>
+@using (Html.BeginForm("save", "ucenici", FormMethod.Post, new { id = "popupForm" }))
+{
+    if (Model != null && Model.ID_ucenik > 0)
+    {
+        @Html.HiddenFor(a => a.ID_ucenik)
+    }
+
+    <div class="form-group">
+        <label>Ime</label>
+        @Html.TextBoxFor(a => a.ime, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.ime)
+
+
+    </div>
+
+    <div class="form-group">
+        <label>Prezime</label>
+        @Html.TextBoxFor(a => a.prezime, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.prezime)
+
+
+    </div>
+
+   // <div class="form-group">
+       @* <label>Odeljenje</label>*@
+       @* @Html.TextBoxFor(a => a.ID_odeljenje, new { @class = "form-control" })*@
+       @* @Html.ValidationMessageFor(a => a.ID_odeljenje)*@
+
+
+    //</div>
+    <div class="form-group">
+        <label>Godina upisa</label>
+        @Html.TextBoxFor(a => a.godina_upisa, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.godina_upisa)
+
+
+    </div>
+    <div class="form-group">
+        <label>Pol</label>
+        @Html.TextBoxFor(a => a.pol, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.pol)
+
+
+    </div>
+
+    <div class="form-group">
+        <label>Datum rodjenja</label>
+        @Html.TextBoxFor(a => a.datum_rodjenja, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.datum_rodjenja)
+
+
+    </div>
+
+    <div class="form-group">
+        <label>JMBG</label>
+        @Html.TextBoxFor(a => a.JMBG, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.JMBG)
+
+
+    </div>
+    <div class="form-group">
+        <label>Roditelj/Staratelj</label>
+        @Html.TextBoxFor(a => a.roditelj_staratelj, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.roditelj_staratelj)
+
+
+    </div>
+    <div class="form-group">
+        <label>Kontakt telefon</label>
+        @Html.TextBoxFor(a => a.kontakt_telefon, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.kontakt_telefon)
+
+
+    </div>
+    <div class="form-group">
+        <label>Korisnicko ime</label>
+        @Html.TextBoxFor(a => a.korisnicko_ime, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.korisnicko_ime)
+
+
+    </div>
+    <div class="form-group">
+        <label>Lozinka</label>
+        @Html.TextBoxFor(a => a.lozinka, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.lozinka)
+
+
+    </div>
+    <div class="form-group">
+        <label>Adresa</label>
+        @Html.TextBoxFor(a => a.adresa, new { @class = "form-control" })
+        @Html.ValidationMessageFor(a => a.adresa)
+
+
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+}
