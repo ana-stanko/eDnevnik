@@ -28,7 +28,7 @@ namespace eDnevnik.Controllers
             return View(prof);
         }
 
-        public ActionResult Ocene(int id)
+        public ActionResult Ocene(int? id)
         {
             eDnevnik_v4Entities2 db = new eDnevnik_v4Entities2();
 
@@ -96,13 +96,30 @@ namespace eDnevnik.Controllers
 
 
         // GET: Dodeljene_ocene/Create
-        public ActionResult NovaOcena()
+        [HttpGet]
+        public ActionResult NovaOcena(int? id)
         {
-             ViewBag.ID_ocena = new SelectList(db.Ocene, "ID_ocena", "ocena");
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            
+            Dodeljene_ocene dodeljene_ocene = db.Dodeljene_ocene.First(x=>  x.Ucenici.ID_ucenik == id);
+            
+            if (dodeljene_ocene == null)
+            {
+                return HttpNotFound();
+            }
+            
+
+            var ocena = db.Ocene.Select(s => new { Text = s.ocena + " (" + s.opis + ")", Value = s.ID_ocena }).ToList();
+            ViewBag.OcenaList = new SelectList(ocena, "Value", "Text");
+            ViewBag.ID_ocena = new SelectList(db.Ocene, "ID_ocena", "ocena");
             ViewBag.ID_predmet = new SelectList(db.Predmeti, "ID_predmet", "naziv_predmeta");
             ViewBag.tip_ocene = new SelectList(db.Tipovi_ocena, "tip_ocene", "tip_ocene");
-            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "Id");
-            return View();
+            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "ID_ucenik");
+            return View(dodeljene_ocene);
         }
 
 
@@ -114,13 +131,13 @@ namespace eDnevnik.Controllers
             {
                 db.Dodeljene_ocene.Add(dodeljene_ocene);
                 db.SaveChanges();
-                return RedirectToAction("Pocetna");
+                return RedirectToAction("Ocene");
             }
 
             ViewBag.ID_ocena = new SelectList(db.Ocene, "ID_ocena", "ocena", dodeljene_ocene.ID_ocena);
             ViewBag.ID_predmet = new SelectList(db.Predmeti, "ID_predmet", "naziv_predmeta", dodeljene_ocene.ID_predmet);
             ViewBag.tip_ocene = new SelectList(db.Tipovi_ocena, "tip_ocene", "tip_ocene", dodeljene_ocene.tip_ocene);
-            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "Id", dodeljene_ocene.ID_ucenik);
+            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "ID_ucenik", dodeljene_ocene.ID_ucenik);
             return View(dodeljene_ocene);
         }
 
@@ -137,11 +154,7 @@ namespace eDnevnik.Controllers
         // GET: Dodeljene_ocene/Edit/5
         public ActionResult IzmenaOcene(int? id)
         {
-
-            var ocena = db.Ocene.Select(s => new {Text = s.ocena + " (" + s.opis +")", Value = s.ID_ocena}).ToList();
-
-            ViewBag.OcenaList = new SelectList(ocena, "Value", "Text");
-
+            
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -151,10 +164,13 @@ namespace eDnevnik.Controllers
             {
                 return HttpNotFound();
             }
+
+            var ocena = db.Ocene.Select(s => new {Text = s.ocena + " (" + s.opis +")", Value = s.ID_ocena}).ToList();
+            ViewBag.OcenaList = new SelectList(ocena, "Value", "Text");
             ViewBag.ID_ocena = new SelectList(db.Ocene, "ID_ocena", "ocena", dodeljene_ocene.ID_ocena);
             ViewBag.ID_predmet = new SelectList(db.Predmeti, "ID_predmet", "naziv_predmeta", dodeljene_ocene.ID_predmet);
             ViewBag.tip_ocene = new SelectList(db.Tipovi_ocena, "tip_ocene", "tip_ocene", dodeljene_ocene.tip_ocene);
-            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "Id", dodeljene_ocene.ID_ucenik);
+            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "ID_ucenik", dodeljene_ocene.ID_ucenik);
             return View(dodeljene_ocene);
         }
 
@@ -174,7 +190,7 @@ namespace eDnevnik.Controllers
             ViewBag.ID_ocena = new SelectList(db.Ocene, "ID_ocena", "ocena", dodeljene_ocene.ID_ocena);
             ViewBag.ID_predmet = new SelectList(db.Predmeti, "ID_predmet", "naziv_predmeta", dodeljene_ocene.ID_predmet);
             ViewBag.tip_ocene = new SelectList(db.Tipovi_ocena, "tip_ocene", "tip_ocene", dodeljene_ocene.tip_ocene);
-            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "Id", dodeljene_ocene.ID_ucenik);
+            ViewBag.ID_ucenik = new SelectList(db.Ucenici, "ID_ucenik", "ID_ucenik", dodeljene_ocene.ID_ucenik);
             return View(dodeljene_ocene);
         }
 
